@@ -207,8 +207,45 @@ export default function LandingPage() {
         </ol>
       </section>
 
-      <section className="wrap" id="about">
+      <section className="section wrap about" id="about" aria-labelledby="about-title">
+        <div className="section__head"><h2 id="about-title">About Kasi24</h2></div>
+        <div className="about__grid">
+          <div className="about__story">
+            <span className="eyebrow">Built by G-Labs</span>
+            <h3>A local way to find a place to stay</h3>
+            <p>
+              Finding a room or a place to rent in the township often means word of mouth, notice boards and a lot of walking.
+              Kasi24 brings local accommodation into one place, starting with Khayelitsha Site B and Site C, so you can search,
+              compare and contact the person offering it.
+            </p>
+            <p>Kasi24 is built by G-Labs for the community it serves. We are starting with accommodation, and local services are coming next.</p>
+          </div>
+          <ul className="about__points">
+            <li><strong>We connect, we don&apos;t book</strong><span>Kasi24 takes no bookings or payments. You send an enquiry and agree everything directly with the provider.</span></li>
+            <li><strong>Checked before it goes live</strong><span>Providers are verified and every listing is reviewed by our team before customers can see it.</span></li>
+            <li><strong>Private by default</strong><span>Exact addresses are not shown publicly. You only see the area until you are in touch.</span></li>
+          </ul>
+        </div>
+        <div className="about__audience">
+          <div className="about__card">
+            <h3>If you are looking for a place</h3>
+            <p>Search by area, type and rent, shortlist your favourites and send an enquiry. It is free.</p>
+            <Link to="/search" className="btn btn--primary btn--sm">Browse stays</Link>
+          </div>
+          <div className="about__card">
+            <h3>If you have a place to let</h3>
+            <p>Create a provider profile, add your listing and reach people looking in your community.</p>
+            <Link to="/provider" className="btn btn--dark btn--sm">List your stay</Link>
+          </div>
+        </div>
+        <p className="about__contact">
+          Questions or feedback? Email us at <a href="mailto:dakalo.madavha@icloud.com">dakalo.madavha@icloud.com</a>.
+        </p>
+      </section>
+
+      <section className="wrap">
         <div className="cta">
+
           <div>
             <h2>Have a room to let?</h2>
             <p>List your accommodation for free and reach people looking in your community.</p>
